@@ -1,0 +1,21 @@
+{
+  "short_name": "Meu Vue PWA",
+  "name": "My Vue PWA App",
+  "icons": [
+    {
+      "src": "img/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm_source=a2hs",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#FFFFFF"
+}
