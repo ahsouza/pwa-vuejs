@@ -1,6 +1,8 @@
 <template>
   <div>
     <h1>Meus Contatos</h1>
+    <ButtonFloat />
+
   </div>
 </template>
 
@@ -11,4 +13,17 @@ h1 {
 </style>
 
 <script>
+import ButtonFloat from './ButtonFloat'
+
+export default {
+  name: 'Contact',
+  components: {
+    ButtonFloat
+  },
+  data () {
+    return {
+
+    }
+  }
+}
 </script>
