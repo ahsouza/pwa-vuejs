@@ -1,6 +1,6 @@
 <template>
-
   <div>
+  <Subheader />
     <ul>
       <li v-for="(link, index) in links" :key="index">
         <router-link :to="link.to">{{ link.name }}</router-link>
@@ -33,11 +33,11 @@
 </style>
 
 <script>
-import Header from './components/Subheader'
+import Subheader from './components/Subheader'
 
 export default {
   components: {
-    Header
+    Subheader
   },
   data: () => ({
     links: [

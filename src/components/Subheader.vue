@@ -1,24 +1,24 @@
 <template>
-<v-card
- flat
- tile
->
- <v-toolbar
-   color="cyan"
-   dark
- >
-   <v-toolbar-side-icon></v-toolbar-side-icon>
+  <v-card
+   flat
+   tile
+  >
+   <v-toolbar
+     color="cyan"
+     dark
+   >
+     <v-toolbar-side-icon></v-toolbar-side-icon>
 
-   <v-toolbar-title>Application</v-toolbar-title>
+     <v-toolbar-title>Application</v-toolbar-title>
 
-   <v-spacer></v-spacer>
+     <v-spacer></v-spacer>
 
-   <v-btn icon>
-     <v-icon>search</v-icon>
-   </v-btn>
- </v-toolbar>
+     <v-btn icon>
+       <v-icon>search</v-icon>
+     </v-btn>
+   </v-toolbar>
 
-</v-card>
+  </v-card>
 </template>
 
 <style scoped>
@@ -28,24 +28,31 @@ h1 {
 </style>
 
 <script>
-module.exports = {
+
+export default {
+  name: 'Subheader',
   data: () => ({
+    links: [
+      { name: 'Home', to: '/'},
+      { name: 'Meus Contatos', to: '/contacts'},
+      { name: 'Bad Link', to: '/random-bad-url'}
+    ],
     types: ['Places to Be', 'Places to See'],
-  cards: ['Good', 'Best', 'Finest'],
-  socials: [
-    {
-      icon: 'fab fa-facebook',
-      color: 'indigo'
-    },
-    {
-      icon: 'fab fa-linkedin',
-      color: 'cyan darken-1'
-    },
-    {
-      icon: 'fab fa-instagram',
-      color: 'red lighten-3'
-    }
-  ]
+    cards: ['Good', 'Best', 'Finest'],
+    socials: [
+      {
+        icon: 'fab fa-facebook',
+        color: 'indigo'
+      },
+      {
+        icon: 'fab fa-linkedin',
+        color: 'cyan darken-1'
+      },
+      {
+        icon: 'fab fa-instagram',
+        color: 'red lighten-3'
+      }
+    ]
    }),
 
    methods: {

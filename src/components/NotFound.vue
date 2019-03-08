@@ -1,7 +1,4 @@
 <template>
-
-
-
   <div>
     <h1>404 Página não encontrada! ={</h1>
   </div>
@@ -14,4 +11,16 @@ h1 {
 </style>
 
 <script>
+
+export default {
+  name: 'NotFound',
+  components: {
+    
+  },
+  data () {
+    return {
+
+    }
+  }
+}
 </script>
