@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Meus Contatos</h1>
-    <ButtonFloat />
 
+    <Subheader />
+    <h1>Meus Contatos</h1>
   </div>
 </template>
 
@@ -14,11 +14,13 @@ h1 {
 
 <script>
 import ButtonFloat from './ButtonFloat'
+import Subheader from './Subheader'
 
 export default {
   name: 'Contact',
   components: {
-    ButtonFloat
+    ButtonFloat,
+    Subheader
   },
   data () {
     return {

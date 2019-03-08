@@ -1,4 +1,5 @@
 <template>
+
   <div>
     <ul>
       <li v-for="(link, index) in links" :key="index">
@@ -32,7 +33,12 @@
 </style>
 
 <script>
+import Header from './components/Subheader'
+
 export default {
+  components: {
+    Header
+  },
   data: () => ({
     links: [
       {
