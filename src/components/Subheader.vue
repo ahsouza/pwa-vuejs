@@ -9,7 +9,13 @@
    >
      <v-toolbar-side-icon></v-toolbar-side-icon>
 
-     <v-toolbar-title>Application</v-toolbar-title>
+     <v-toolbar-title v-if="ahsouza">@ahsouza</v-toolbar-title>
+     <v-spacer></v-spacer>
+     <v-btn icon>
+       <v-icon>search</v-icon>
+     </v-btn>
+
+     <v-spacer></v-spacer>
      <ul>
        <li v-for="(link, index) in links" :key="index">
          <router-link :to="link.to">{{ link.name }}</router-link>
@@ -18,10 +24,9 @@
 
      </ul>
 
-     <v-spacer></v-spacer>
 
      <v-btn icon>
-       <v-icon>search</v-icon>
+       <v-icon>menu</v-icon>
      </v-btn>
    </v-toolbar>
 
@@ -36,16 +41,20 @@ ul {
   list-style: none;
   display: flex;
   padding: 0;
+  margin-right: 5%;
 }
 li {
   padding: 5px 15px 5px 0;
+
 }
 li a {
   text-decoration: none;
-  color: black;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #fff;
 }
 li a:hover {
-  color: #404040;
+  color: #18ffff;
 }
 </style>
 
@@ -54,10 +63,12 @@ li a:hover {
 export default {
   name: 'Subheader',
   data: () => ({
+    ahsouza: true,
     links: [
-      { name: 'Home', to: '/'},
-      { name: 'Meus Contatos', to: '/contacts'},
-      { name: 'Bad Link', to: '/random-bad-url'}
+      { name: 'Início', to: '/'},
+      { name: 'Sobre', to: '/about'},
+      { name: 'Contato', to: '/contacts'},
+      { name: '404', to: '/random-bad-url'}
     ],
     types: ['Places to Be', 'Places to See'],
     cards: ['Good', 'Best', 'Finest'],

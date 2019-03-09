@@ -1,11 +1,13 @@
-<template>
-  <div>
-  <Subheader />
 
-    <main>
-      <router-view/>
-    </main>
-  </div>
+<template>
+
+    <div>
+      <Subheader />
+      <main>
+        <router-view/>
+      </main>
+    </div>
+
 </template>
 
 <style scoped>
@@ -19,7 +21,7 @@ export default {
     Subheader
   },
   data: () => ({
-    
+
   })
 }
 </script>

@@ -7,12 +7,12 @@
     <v-btn color="#BF360C">Info</v-btn>
 
     <v-btn color="error" fab large dark>
-              <v-icon>alarm</v-icon>
-            </v-btn>
+      <v-icon>alarm</v-icon>
+    </v-btn>
 
-            <v-btn color="warning" fab dark>
-          <v-icon>account_circle</v-icon>
-        </v-btn>
+    <v-btn color="warning" fab dark>
+      <v-icon>account_circle</v-icon>
+    </v-btn>
 
   </div>
 </template>
