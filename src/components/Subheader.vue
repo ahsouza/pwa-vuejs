@@ -9,7 +9,13 @@
    >
      <v-toolbar-side-icon></v-toolbar-side-icon>
 
-     <v-toolbar-title v-if="ahsouza">@ahsouza</v-toolbar-title>
+     <ul>
+       <li v-for='username in usernames'>
+         <v-toolbar-title v-if="login">{{ username.login}}</v-toolbar-title>
+       </li>
+     </ul>
+
+
      <v-spacer></v-spacer>
      <v-btn icon>
        <v-icon>search</v-icon>
@@ -63,7 +69,14 @@ li a:hover {
 export default {
   name: 'Subheader',
   data: () => ({
-    ahsouza: true,
+    login: true,
+    usernames: [
+      { login: 'ahsouza'},
+      { login: 'anibal'},
+      { login: 'henrique'},
+      { login: 'joão'},
+      { login: 'maria'}
+    ],
     links: [
       { name: 'Início', to: '/'},
       { name: 'Sobre', to: '/about'},

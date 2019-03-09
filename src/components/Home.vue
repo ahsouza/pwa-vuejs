@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Form />
+
+    <p>Olá {{ message }}...  </p>
+    <input v-model="message">
+
+
     <h1>Home</h1>
     <v-btn large="true" color="#2979FF">Success</v-btn>
     <v-btn color="#6200EA">Error</v-btn>
@@ -26,4 +32,20 @@ h1 {
 </style>
 
 <script>
+import Form from './vuetify/Form'
+
+
+export default {
+  name: 'Home',
+  components: {
+    Form
+  },
+  data: () => ({
+    message: 'Seu username',
+    messages: [
+      { welcome: 'Seja bem vindo(a)', bye: 'Bye Bye!'}
+    ]
+  })
+
+}
 </script>
