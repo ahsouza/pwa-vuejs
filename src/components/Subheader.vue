@@ -81,6 +81,7 @@ export default {
       { name: 'Início', to: '/'},
       { name: 'Sobre', to: '/about'},
       { name: 'Contato', to: '/contacts'},
+      { name: 'Loja', to: '/store'},
       { name: '404', to: '/random-bad-url'}
     ],
     types: ['Places to Be', 'Places to See'],

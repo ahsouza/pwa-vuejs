@@ -1,11 +1,12 @@
 import Vue from 'vue'
+import axios from 'axios'
 import App from './App.vue'
 import router from './router'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
-
 import Vuetify from 'vuetify'
 
+Vue.prototype.$http = axios
 Vue.use(Vuetify, {
   theme: {
     primary: colors.purple,
