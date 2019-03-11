@@ -1,15 +1,16 @@
 <template>
+  <div class="container">
+     <div id="my-embedded-typeform" style="width: 100%; height: 600px;"></div>
 
-  <v-container grid-list-md text-xs-center>
-    <v-layout row wrap>
-     <v-flex v-for="i in 2" :key="`6${i}`" xs6>
-       <v-card dark color="secondary">
-         <v-card-text class="px-0"><Typeform /></v-card-text>
-       </v-card>
-     </v-flex>
-    </v-layout>
-  </v-container>
+      <v-btn color="error" fab large dark>
+        <v-icon>alarm</v-icon>
+      </v-btn>
 
+      <v-btn color="warning" fab dark>
+        <v-icon>account_circle</v-icon>
+      </v-btn>
+
+  </div>
 </template>
 
 <style scoped>
@@ -50,34 +51,15 @@ h1 {
 </style>
 
 <script>
-import Form from './vuetify/Form'
-import Typeform from './typeform/Typeform'
-
-
 export default {
-  name: 'Home',
-  components: {
-    Form,
-    Typeform
-  },
+  name: 'Typeform',
   data: () => ({
     message: 'Seu username',
     msgWelcome:'Bem vindo',
-    frutas: ['Banana', 'Abacate', 'Melancia', 'Manga' ],
-    projetos: [
-      { projetoNome: 'Desenvolvimento De Software'},
-      { projetoNome: 'Desenvolvimento De E-commerce'},
-      { projetoNome: 'Desenvolvimento De Campanhas Publicitária'},
-      { projetoNome: 'Desenvolvimento De Sites'}
-    ],
-    messages: [
-      { welcome: 'Seja bem vindo(a)', bye: 'Bye Bye!'}
-    ]
+
   })
 
 }
-
-
   window.addEventListener("DOMContentLoaded", function() {
     var el = document.getElementById("my-embedded-typeform")
 
