@@ -1,42 +1,15 @@
 <template>
 
-<div class="container">
-   <h1>Cupcake ipsum</h1>
-   <h2>This is a typeform embedded as a widget</h2>
+  <div class="container">
+     <div id="my-embedded-typeform" style="width: 100%; height: 600px;"></div>
 
+      <v-btn color="error" fab large dark>
+        <v-icon>alarm</v-icon>
+      </v-btn>
 
-   <div id="my-embedded-typeform"
-        style="width: 100%; height: 300px;"></div>
-
-   <p>Tiramisu danish powder gingerbread sugar plum wafer biscuit marzipan. Danish soufflé oat cake pie liquorice dessert candy croissant. Biscuit candy gummi bears cookie sweet. Marshmallow jujubes wafer tart lollipop liquorice. Toffee candy liquorice macaroon.</p>
-
-
-    <Form />
-
-    <p>Olá {{ message }}...  </p>
-    <input v-model="message">
-
-
-
-    <ul >
-      <li v-repeat='frutas'>
-        {{$value}}
-      </li>
-    </ul>
-
-    <h1>Home</h1>
-    <v-btn large="true" color="#2979FF">Success</v-btn>
-    <v-btn color="#6200EA">Error</v-btn>
-    <v-btn color="#00E676">Warning</v-btn>
-    <v-btn color="#BF360C">Info</v-btn>
-
-    <v-btn color="error" fab large dark>
-      <v-icon>alarm</v-icon>
-    </v-btn>
-
-    <v-btn color="warning" fab dark>
-      <v-icon>account_circle</v-icon>
-    </v-btn>
+      <v-btn color="warning" fab dark>
+        <v-icon>account_circle</v-icon>
+      </v-btn>
 
   </div>
 </template>
@@ -48,7 +21,7 @@ h1 {
 }
 .container {
   margin: 0 auto;
-  width: 600px;
+  width: 100%;
 }
 
 .container p, .container h2 {
