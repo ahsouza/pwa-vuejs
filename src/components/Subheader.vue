@@ -1,41 +1,72 @@
 <template>
   <v-card
-   flat
-   tile
+    flat
+    tile
   >
-   <v-toolbar
-     color="cyan"
-     dark
-   >
-     <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar
+      color="cyan"
+      dark
+    >
+      <v-toolbar-side-icon></v-toolbar-side-icon>
 
-     <ul>
-       <li v-for='username in usernames'>
-         <v-toolbar-title v-if="login">{{ username.login}}</v-toolbar-title>
-       </li>
-     </ul>
+      <v-toolbar-title>Application</v-toolbar-title>
 
+      <v-spacer></v-spacer>
 
-     <v-spacer></v-spacer>
-     <v-btn icon>
-       <v-icon>search</v-icon>
-     </v-btn>
-
-     <v-spacer></v-spacer>
-     <ul>
-       <li v-for="(link, index) in links" :key="index">
-         <router-link :to="link.to">{{ link.name }}</router-link>
-       </li>
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
 
 
-     </ul>
+    </v-toolbar>
 
+    <v-container
+      v-for="type in types"
+      :key="type"
+      fluid
+      grid-list-md
+      grey
+      lighten-4
+    >
+      <v-subheader>{{ type }}</v-subheader>
 
-     <v-btn icon>
-       <v-icon>menu</v-icon>
-     </v-btn>
-   </v-toolbar>
+      <v-layout row wrap>
+        <v-spacer></v-spacer>
+        <v-flex
+          v-for="card in cards"
+          :key="card"
+          xs12
+          sm6
+          md4
+        >
+          <v-card>
+            <v-img
+              :src="`https://picsum.photos/200/300?image=${getImage()}`"
+              height="300px"
+            >
+              <span
+                class="headline white--text pl-3 pt-3"
+                v-text="card.title"
+              ></span>
+            </v-img>
 
+            <v-card-actions class="white justify-center">
+              <v-btn
+                v-for="(social, i) in socials"
+                :key="i"
+                :color="social.color"
+                class="white--text"
+                fab
+                icon
+                small
+              >
+                <v-icon>{{ social.icon }}</v-icon>
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </v-card>
 </template>
 
