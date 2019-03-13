@@ -26,9 +26,8 @@
       fluid
       grid-list-md
       grey
-      lighten-4
+      lighten-2
     >
-      <v-subheader>{{ type }}</v-subheader>
 
       <v-layout row wrap>
         <v-spacer></v-spacer>
@@ -37,7 +36,7 @@
           :key="card"
           xs12
           sm6
-          md4
+          md6
         >
           <v-card>
             <v-img
@@ -116,7 +115,7 @@ export default {
       { name: '404', to: '/random-bad-url'}
     ],
     types: ['Places to Be', 'Places to See'],
-    cards: ['Good', 'Best', 'Finest'],
+    cards: ['Good', 'Best'],
     socials: [
       {
         icon: 'fab fa-facebook',

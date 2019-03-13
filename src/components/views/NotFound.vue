@@ -15,7 +15,7 @@ h1 {
 export default {
   name: 'NotFound',
   components: {
-    
+
   },
   data () {
     return {

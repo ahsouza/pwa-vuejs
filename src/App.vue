@@ -13,7 +13,7 @@
 </style>
 
 <script>
-import Subheader from './components/Subheader'
+import Subheader from './components/vuetify/Subheader'
 
 export default {
   components: {
