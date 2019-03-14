@@ -2,7 +2,7 @@
   "name": "pwa-vue",
   "version": "1.0.0",
   "description": "",
-  "author": "",
+  "author": "@ahsouza <annibalhsouza@gmail.com>",
   "scripts": {
     "dev": "webpack-dev-server --progress"
   },
@@ -11,7 +11,8 @@
     "material-design-icons-iconfont": "^4.0.5",
     "vue": "^2.6.8",
     "vue-router": "^3.0.2",
-    "vuetify": "^1.5.5"
+    "vuetify": "^1.5.5",
+    "vue-design-system": "git+https://github.com/viljamis/vue-design-system"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
