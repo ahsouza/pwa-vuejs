@@ -11,7 +11,7 @@ h1 {
 </style>
 
 <script>
-import ButtonFloat from './../vuetify/ButtonFloat'
+import ButtonFloat from './../components/vuetify/ButtonFloat'
 
 export default {
   name: 'Contact',

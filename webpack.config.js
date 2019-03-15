@@ -102,22 +102,10 @@ module.exports = (env, argv) => ({
 
   devServer: {
     compress: true,
-    host: 'localhost',
-    https: true,
-    open: true,
-    overlay: true,
-    port: 9000,
-    historyApiFallback: true,
-    noInfo: true,
-    openPage: '/',
-    warnings: true,
-    errors: true,
-    pfxPassphrase: 'my key $3cR3T',
-    proxy: {
-      '/api': {
-        target: 'https://localhost:3000',
-        secure: false
-      }
+      host: 'localhost',
+      https: true,
+      open: true,
+      overlay: true,
+      port: 9000
     }
-  }
 })

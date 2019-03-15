@@ -46,8 +46,8 @@ h1 {
 </style>
 
 <script>
-import Form from './../vuetify/Form'
-import Typeform from './../typeform/Typeform'
+import Form from './../components/vuetify/Form'
+import Typeform from './../components/typeform/Typeform'
 
 
 export default {
