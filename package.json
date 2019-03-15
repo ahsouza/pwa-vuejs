@@ -4,15 +4,21 @@
   "description": "",
   "author": "@ahsouza <annibalhsouza@gmail.com>",
   "scripts": {
-    "dev": "webpack-dev-server --progress"
+    "dev": "webpack-dev-server --progress",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@storybook/addon-actions": "^5.0.1",
+    "@storybook/addon-links": "^5.0.1",
+    "@storybook/addons": "^5.0.1",
+    "@storybook/vue": "^5.0.1",
     "axios": "^0.18.0",
     "material-design-icons-iconfont": "^4.0.5",
     "vue": "^2.6.8",
+    "vue-design-system": "git+https://github.com/viljamis/vue-design-system",
     "vue-router": "^3.0.2",
-    "vuetify": "^1.5.5",
-    "vue-design-system": "git+https://github.com/viljamis/vue-design-system"
+    "vuetify": "^1.5.5"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
