@@ -5,7 +5,7 @@ import {linkTo} from '@storybook/addon-links'
 import QuoteSteppersV1 from './QuoteSteppersV1'
 import QuoteSteppersV2 from './QuoteSteppersV2'
 
-storiesOf.('QuoteSteppers', module)
+storiesOf('QuoteSteppers', module)
   .add('V1', () => ({
     components: {QuoteSteppersV1},
     template: '<quote-steppers-v1 @click="action">BUTTON</quote-steppers-v1>',
