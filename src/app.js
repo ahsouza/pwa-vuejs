@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import axios from 'axios'
-import App from './App.vue'
-import router from './router'
+import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
-import Vuetify from 'vuetify'
+import App from './App.vue'
+import router from './router'
+import axios from 'axios'
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
