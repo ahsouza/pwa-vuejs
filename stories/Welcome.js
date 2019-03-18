@@ -113,7 +113,7 @@ export default {
 
   methods: {
     onClick(event) {
-      event.preventDefault();
+      event.preventDefault()
       this.showApp();
     },
   },

@@ -7,6 +7,8 @@ import colors from 'vuetify/es5/util/colors'
 import Vuetify from 'vuetify'
 
 Vue.prototype.$http = axios
+Vue.config.productionTip = false
+
 Vue.use(Vuetify, {
   theme: {
     primary: colors.purple,
@@ -16,7 +18,6 @@ Vue.use(Vuetify, {
   },
   iconfont: 'mdi'
 })
-Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
