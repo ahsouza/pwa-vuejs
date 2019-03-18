@@ -1,8 +1,8 @@
 {
   "name": "pwa-vue",
   "version": "1.0.0",
-  "description": "",
   "author": "@ahsouza <annibalhsouza@gmail.com>",
+  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --progress",
     "storybook": "start-storybook -p 6006",

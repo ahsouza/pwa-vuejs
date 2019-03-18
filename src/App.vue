@@ -1,12 +1,10 @@
 <template>
-
     <div>
       <Subheader />
       <main>
         <router-view/>
       </main>
     </div>
-
 </template>
 
 <script>
