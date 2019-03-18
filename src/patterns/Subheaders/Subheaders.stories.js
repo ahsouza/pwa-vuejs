@@ -1,7 +1,7 @@
 import {storiesOf} from '@storybook/vue'
 import {action} from '@storybook/addon-actions'
 import {linkTo} from '@storybook/addon-links'
-
+import 'vuetify/dist/vuetify.min.css'
 import SubheadersV1 from './SubheadersV1'
 import SubheadersV2 from './SubheadersV2'
 import Header from './../../components/vuetify/Subheader'
@@ -9,10 +9,9 @@ import Header from './../../components/vuetify/Subheader'
 storiesOf('Subheaders', module)
   .add('V1', () => ({
     components: {SubheadersV1},
-    template: '<subheaders-v1></subheaders-v1>',
-    methods: { action: action('clicked') }
+    template: '<SubheadersV1 />'
   }))
   .add('V2', () => ({
     components: {Header},
-    template: '<Subheader/>'
+    template: '<Header/>'
   }))

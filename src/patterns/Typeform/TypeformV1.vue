@@ -51,6 +51,15 @@ h1 {
 </style>
 
 <script>
+window.addEventListener("DOMContentLoaded", function() {
+var el = document.getElementById("my-embedded-typeform")
+
+window.typeformEmbed.makeWidget(el, "https://admin.typeform.com/to/cVa5IG", {
+hideFooter: true,
+hideHeaders: true,
+opacity: 0
+})
+})
 export default {
   name: 'Typeform',
   data: () => ({
@@ -60,13 +69,4 @@ export default {
   })
 
 }
-  window.addEventListener("DOMContentLoaded", function() {
-    var el = document.getElementById("my-embedded-typeform")
-
-    window.typeformEmbed.makeWidget(el, "https://admin.typeform.com/to/cVa5IG", {
-      hideFooter: true,
-      hideHeaders: true,
-      opacity: 0
-    })
-  })
 </script>
