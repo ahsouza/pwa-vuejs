@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --progress",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s static",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
