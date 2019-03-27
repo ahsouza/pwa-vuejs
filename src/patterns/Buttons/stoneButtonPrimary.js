@@ -1,5 +1,5 @@
 export default {
-  name: 'stone-btn',
+  name: 'stone-btn-primary',
   props: ['cor', 'elevation', 'shadow', 'width', 'height', 'transition'],
   data() {
     return {
@@ -11,10 +11,10 @@ export default {
         webkitAppearance: 'none',
         mozAppearance: 'none',
         appearance: 'none',
-        backgroundColor: '#fff',
-        border: '2px solid #1DE9B6',
+        backgroundColor: '#00b0ff',
+        border: '2px solid #00b0ff',
         borderRadius: '0.6em',
-        color: '#1DE9B6',
+        color: '#fff',
         cursor: 'pointer',
         display: 'flex',
         alignSelf: 'center',
@@ -36,7 +36,7 @@ export default {
         webkitAppearance: 'none',
         mozAppearance: 'none',
         appearance: 'none',
-        backgroundColor: '#1DE9B6',
+        backgroundColor: '#00b0ff',
         border: '2px solid #fff',
         borderRadius: '0.6em',
         color: '#fff',

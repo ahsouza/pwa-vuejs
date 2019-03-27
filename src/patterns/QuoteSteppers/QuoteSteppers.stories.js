@@ -13,6 +13,6 @@ storiesOf('QuoteSteppers', module)
   }))
   .add('V2', () => ({
     components: {QuoteSteppersV2},
-    template: '<quote-steppers-v2 @click="action">BUTTON</quote-steppers-v1>',
+    template: '<quote-steppers-v2 @click="action">BUTTON</quote-steppers-v2>',
     methods: { action: action('clicked') }
   }))

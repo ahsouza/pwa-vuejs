@@ -3,26 +3,28 @@ import {action} from '@storybook/addon-actions'
 import {linkTo} from '@storybook/addon-links'
 
 import StoneBtn from './stoneButton'
-
-import ButtonsV1 from './ButtonsV1'
-import ButtonsV2 from './ButtonsV2'
-import ButtonsV3 from './ButtonsV3'
+import StoneBtnWarning from './stoneButtonWarning'
+import StoneBtnSuccess from './stoneButtonSuccess'
+import StoneBtnPrimary from './stoneButtonPrimary'
 
 storiesOf('Buttons', module)
-  .add('StoneBtnV1', () => ({
+  .add('default', () => ({
     components: {StoneBtn},
     template: '<stone-btn>STONES</stone-btn>',
     methods: { action: action('clicked') }
   }))
-  .add('V1', () => ({
-    components: {ButtonsV1},
-    template: '<ButtonsV1 />'
+  .add('success', () => ({
+    components: {StoneBtnSuccess},
+    template: '<stone-btn-success>STONES</stone-btn-success>',
+    methods: { action: action('clicked') }
   }))
-  .add('V2', () => ({
-    components: {ButtonsV2},
-    template: '<ButtonsV2 />'
+  .add('primary', () => ({
+    components: {StoneBtnPrimary},
+    template: '<stone-btn-primary>STONES</stone-btn-primary>',
+    methods: { action: action('clicked') }
   }))
-  .add('V3', () => ({
-    components: {ButtonsV3},
-    template: '<ButtonsV3 />'
+  .add('warning', () => ({
+    components: {StoneBtnWarning},
+    template: '<stone-btn-warning>STONES</stone-btn-warning>',
+    methods: { action: action('clicked') }
   }))
