@@ -55,13 +55,11 @@ export default {
   template: `
     <button v-if="!btn" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave" :style='stoneButton' @click="onClick">
       <slot />
-      {{btn}}
     </button>
 
 
     <button v-else v-on:mouseleave="mouseleave" :style='stoneButtonA' @click="onClick">
       <slot />
-      {{btn}}
     </button>
   `,
   methods: {
