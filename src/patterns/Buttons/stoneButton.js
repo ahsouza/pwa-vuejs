@@ -3,7 +3,7 @@ export default {
   props: ['red', 'blue', 'green', 'white', 'purple', 'pink', 'orange'],
   data() {
     return {
-      btn: '',
+      btn: false,
       stoneButton: {
         boxSizing: 'border-box',
         webkitAppearance: 'none',
@@ -53,8 +53,15 @@ export default {
     }
   },
   template: `
-    <button v-on:mouseover="mouseover" v-on:mouseleave="mouseleave" :style="stoneButtonA" @click="onClick">
+    <button v-if="!btn" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave" :style='stoneButton' @click="onClick">
       <slot />
+      {{btn}}
+    </button>
+
+
+    <button v-else v-on:mouseleave="mouseleave" :style='stoneButtonA' @click="onClick">
+      <slot />
+      {{btn}}
     </button>
   `,
   methods: {
@@ -62,11 +69,11 @@ export default {
       this.$emit('click')
     },
     mouseover: function(){
-      this.btn = 'A'
+      return this.btn = true
      },
      mouseleave: function(){
-       this.btn = ''
+       return this.btn = false
      }
-  }
+  },
 
 }
