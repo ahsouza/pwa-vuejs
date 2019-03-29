@@ -41,6 +41,30 @@ storiesOf('Steppers', module)
   }))
   .add('Vertical', () => ({
     components: {VuetifyStepperVertical},
-    template: `<vuetify-stepper-vertical></vuetify-stepper-vertical>`,
+    template: `<vuetify-stepper-vertical>
+      <template v-slot:title-sumary>
+        Partida
+      </template>
+
+      <template v-slot:subtitle-sumary>
+        Faça seu orçamento
+      </template>
+
+      <template v-slot:content-step-1>
+        Seleção de tecnologias
+      </template>
+
+      <template v-slot:content-step-2>
+        Cadastro pessoal
+      </template>
+
+      <template v-slot:content-step-3>
+        Tipo de orçamento
+      </template>
+
+      <template v-slot:content-step-4>
+        Envie seu pedido
+      </template>
+    </vuetify-stepper-vertical>`,
     methods: { action: action('clicked') }
   }))
