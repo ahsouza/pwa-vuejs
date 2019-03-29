@@ -3,10 +3,13 @@ import {action} from '@storybook/addon-actions'
 import {linkTo} from '@storybook/addon-links'
 import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 
+
 import StoneBtn from './stoneButton'
 import StoneBtnWarning from './stoneButtonWarning'
 import StoneBtnSuccess from './stoneButtonSuccess'
 import StoneBtnPrimary from './stoneButtonPrimary'
+import VuetifyBtnPrimary from './vuetifyButtonPrimary'
+
 
 storiesOf('Buttons', module)
   .addDecorator(withKnobs)
@@ -36,5 +39,10 @@ storiesOf('Buttons', module)
   .add('warning', () => ({
     components: {StoneBtnWarning},
     template: '<stone-btn-warning>STONES</stone-btn-warning>',
+    methods: { action: action('clicked') }
+  }))
+  .add('warning-vuetify', () => ({
+    components: {VuetifyBtnPrimary},
+    template: '<vuetify-btn-primary>STONES</vuetify-btn-primary>',
     methods: { action: action('clicked') }
   }))
