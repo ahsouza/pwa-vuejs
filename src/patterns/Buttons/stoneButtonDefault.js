@@ -1,5 +1,5 @@
 export default {
-  name: 'stone-btn',
+  name: 'stone-btn-default',
   props: {
     isDisabled: {
       type: Boolean,
