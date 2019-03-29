@@ -9,6 +9,8 @@ import StoneBtnWarning from './stoneButtonWarning'
 import StoneBtnSuccess from './stoneButtonSuccess'
 import StoneBtnPrimary from './stoneButtonPrimary'
 import VuetifyBtnPrimary from './vuetifyButtonPrimary'
+import VuetifyBtnWarning from './vuetifyButtonWarning'
+import VuetifyBtnSuccess from './vuetifyButtonSuccess'
 
 
 storiesOf('Buttons', module)
@@ -41,8 +43,18 @@ storiesOf('Buttons', module)
     template: '<stone-btn-warning>STONES</stone-btn-warning>',
     methods: { action: action('clicked') }
   }))
-  .add('warning-vuetify', () => ({
+  .add('primary-vuetify', () => ({
     components: {VuetifyBtnPrimary},
     template: '<vuetify-btn-primary>STONES</vuetify-btn-primary>',
+    methods: { action: action('clicked') }
+  }))
+  .add('warning-vuetify', () => ({
+    components: {VuetifyBtnWarning},
+    template: '<vuetify-btn-warning>STONES</vuetify-btn-warning>',
+    methods: { action: action('clicked') }
+  }))
+  .add('success-vuetify', () => ({
+    components: {VuetifyBtnSuccess},
+    template: '<vuetify-btn-success>STONES</vuetify-btn-success>',
     methods: { action: action('clicked') }
   }))

@@ -1,6 +1,6 @@
 
 <template>
-  <v-btn :style="btnVuetify" round color="#03A9F4">
+  <v-btn :style="btnVuetify" round color="#00C853">
     <slot></slot>
   </v-btn>
 </template>
@@ -13,7 +13,7 @@
 <script>
 
 export default {
-  name: 'vuetify-btn-primary',
+  name: 'vuetify-btn-success',
   data() {
     return {
       btnVuetify: {
