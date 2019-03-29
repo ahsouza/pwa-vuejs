@@ -4,6 +4,7 @@ import {linkTo} from '@storybook/addon-links'
 import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 
 import VuetifyStepperHorizontal from './vuetifyStepperHorizontal'
+import VuetifyStepperVertical from './vuetifyStepperVertical'
 
 
 storiesOf('Steppers', module)
@@ -36,5 +37,10 @@ storiesOf('Steppers', module)
       </template>
 
     </vuetify-stepper-horizontal>`,
+    methods: { action: action('clicked') }
+  }))
+  .add('Vertical', () => ({
+    components: {VuetifyStepperVertical},
+    template: `<vuetify-stepper-vertical></vuetify-stepper-vertical>`,
     methods: { action: action('clicked') }
   }))
