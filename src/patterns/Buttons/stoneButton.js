@@ -1,5 +1,11 @@
 export default {
   name: 'stone-btn',
+  props: {
+    isDisabled: {
+      type: Boolean,
+      default: false
+    }
+  },
   props: ['cor', 'elevation', 'shadow', 'width', 'height', 'transition'],
   data() {
     return {
@@ -57,11 +63,11 @@ export default {
     }
   },
   template: `
-    <button v-if="!hover" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave" :style='stoneButton' @click="onClick">
+    <button :disabled="isDisabled" v-if="!hover" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave" :style='stoneButton' @click="onClick">
       <slot />
     </button>
 
-    <button v-else v-on:mouseleave="mouseleave" :style='stoneButtonHover' @click="onClick">
+    <button :disabled="isDisabled" v-else v-on:mouseleave="mouseleave" :style='stoneButtonHover' @click="onClick">
       <slot />
     </button>
   `,

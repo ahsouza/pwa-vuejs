@@ -13,6 +13,9 @@ Vue.use(Vuetify, {
   theme: {
     primary: colors.purple,
     secondary: colors.grey.darken1,
+    info: '#2196F3',
+    success: '#4CAF50',
+    warning: '#FFC107',
     accent: colors.shades.black,
     error: colors.red.accent3
   },

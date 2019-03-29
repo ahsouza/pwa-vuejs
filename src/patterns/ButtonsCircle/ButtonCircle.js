@@ -8,7 +8,7 @@ export default {
         display: 'block',
         position:'relative',
         padding:'0',
-        zIndex:' 98',
+        zIndex:'98',
         margin:'0 auto',
         boxShadow: '0 6px 10px 0 rgba(0, 0, 0, 0.3)',
         borderRadius:'50%',
@@ -18,7 +18,7 @@ export default {
         transition: '0.2s',
         textAlign: 'center'
       },
-      ButtonCircleInHover: {
+      ButtonCircleHover: {
         cursor: 'pointer',
         backgroundColor: '#606fc7',
         boxShadow: '0 8px 15px 0 rgba(0, 0, 0, 0.3)'
@@ -30,7 +30,7 @@ export default {
       <slot />
     </button>
 
-    <button v-else v-on:mouseleave="mouseleave" :style='ButtonCircleInHover' @click="onClick">
+    <button v-else v-on:mouseleave="mouseleave" :style='ButtonCircleHover' @click="onClick">
       <slot />
     </button>
   `,
