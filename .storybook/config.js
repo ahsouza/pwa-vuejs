@@ -5,7 +5,9 @@ import '../src/assets/css/style.css'
 import Vue from 'vue'
 import 'vuetify/dist/vuetify.min.css'
 import Vuetify from 'vuetify'
+import MaterialIcons from 'material-design-icons-iconfont'
 import colors from 'vuetify/es5/util/colors'
+Vue.use(MaterialIcons)
 Vue.use(Vuetify, {
   theme: {
     primary: colors.indigo.base,

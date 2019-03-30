@@ -13,15 +13,15 @@ storiesOf('Steppers', module)
     components: {VuetifyStepperHorizontal},
     template: `<vuetify-stepper-horizontal>
       <template v-slot:header-step-1>
-        Primeira etapa
+        Seleção de Tecnologias para seu projeto
       </template>
 
       <template v-slot:header-step-2>
-        Segunda etapa
+        Cadastro Pessoal
       </template>
 
       <template v-slot:header-step-3>
-        Terceira etapa
+        Enviar Orçamento
       </template>
 
       <template v-slot:btn-content-step-1>
