@@ -20,40 +20,34 @@
 
     <v-stepper-items>
       <v-stepper-content step="1">
-        <v-card class="mb-5" height="380px">
+        <v-card class="mb-5" height="420px">
           <VuetifyComboBox />
+          <VuetifySelectionControls />
         </v-card>
 
         <v-btn color="#03A9F4" :style="styleButton" @click="e1 = 2">
           <slot name="btn-content-step-1" />
         </v-btn>
-
-        <v-btn flat color="#d50000">Cancel</v-btn>
-        <ButtonVuetifyPrimary >SALVAR </ButtonVuetifyPrimary>
       </v-stepper-content>
 
       <v-stepper-content step="2">
-        <v-card class="mb-5" color="green" height="300px">
+        <v-card class="mb-5" color="#fff" height="420px">
+          <VuetifyFormInputs/>
         </v-card>
+
+        <v-btn flat color="#d50000" @click="e1 = 1">Voltar</v-btn>
 
         <v-btn color="#03A9F4" :style="styleButton" @click="e1 = 3">
           <slot name="btn-content-step-2" />
         </v-btn>
-
-        <v-btn flat color="#d50000">Cancel</v-btn>
-        <ButtonVuetifyWarning >SALVAR</ButtonVuetifyWarning>
       </v-stepper-content>
 
       <v-stepper-content step="3">
-        <v-card class="mb-5" color="blue" height="300px">
+        <v-card class="mb-5" color="blue" height="420px">
         </v-card>
 
-        <v-btn color="#03A9F4" :style="styleButton" @click="e1 = 1">
-          <slot name="btn-content-step-3" />
-        </v-btn>
-
-        <v-btn flat color="#d50000">Cancel</v-btn>
-        <ButtonVuetifySuccess >SALVAR</ButtonVuetifySuccess>
+        <ButtonVuetifyWarning @click="e1 = 1">VOLTAR</ButtonVuetifyWarning>
+        <ButtonVuetifySuccess >CONCLUIR</ButtonVuetifySuccess>
       </v-stepper-content>
     </v-stepper-items>
 
@@ -61,6 +55,7 @@
 </template>
 
 <style scoped>
+
 </style>
 
 <script>
@@ -72,6 +67,8 @@ import ButtonStoneWarning from '../Buttons/stoneButtonWarning'
 import ButtonStonePrimary from '../Buttons/stoneButtonPrimary'
 
 import VuetifyComboBox from '../../elements/comboBox/vuetifyComboBox'
+import VuetifySelectionControls from '../../elements/selectionControls/vuetifySelectionControls'
+import VuetifyFormInputs from '../../elements/form/vuetifyFormInputs'
 
 export default {
   name: 'vuetify-stepper-horizontal',
@@ -82,7 +79,9 @@ export default {
     ButtonStoneSuccess,
     ButtonStoneWarning,
     ButtonStonePrimary,
-    VuetifyComboBox
+    VuetifyFormInputs,
+    VuetifyComboBox,
+    VuetifySelectionControls
   },
   data() {
     return {
