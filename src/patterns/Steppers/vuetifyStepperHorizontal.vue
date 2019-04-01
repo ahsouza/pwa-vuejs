@@ -20,8 +20,8 @@
 
     <v-stepper-items>
       <v-stepper-content step="1">
-        <v-card class="mb-5" color="red" height="300px">
-
+        <v-card class="mb-5" height="380px">
+          <VuetifyComboBox />
         </v-card>
 
         <v-btn color="#03A9F4" :style="styleButton" @click="e1 = 2">
@@ -71,6 +71,8 @@ import ButtonStoneSuccess from '../Buttons/stoneButtonSuccess'
 import ButtonStoneWarning from '../Buttons/stoneButtonWarning'
 import ButtonStonePrimary from '../Buttons/stoneButtonPrimary'
 
+import VuetifyComboBox from '../../elements/comboBox/vuetifyComboBox'
+
 export default {
   name: 'vuetify-stepper-horizontal',
   components: {
@@ -79,7 +81,8 @@ export default {
     ButtonVuetifyPrimary,
     ButtonStoneSuccess,
     ButtonStoneWarning,
-    ButtonStonePrimary
+    ButtonStonePrimary,
+    VuetifyComboBox
   },
   data() {
     return {

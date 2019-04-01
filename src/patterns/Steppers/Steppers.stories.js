@@ -5,6 +5,7 @@ import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 
 import VuetifyStepperHorizontal from './vuetifyStepperHorizontal'
 import VuetifyStepperVertical from './vuetifyStepperVertical'
+import VuetifyComboBox from '../../elements/comboBox/vuetifyComboBox'
 
 
 storiesOf('Steppers', module)
@@ -15,6 +16,7 @@ storiesOf('Steppers', module)
       <template v-slot:header-step-1>
         Seleção de Tecnologias para seu projeto
       </template>
+
 
       <template v-slot:header-step-2>
         Cadastro Pessoal
