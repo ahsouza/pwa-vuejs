@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form class="pa-2">
     <v-text-field
       v-model="name"
       :error-messages="nameErrors"

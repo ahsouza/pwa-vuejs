@@ -35,7 +35,7 @@
           <VuetifyFormInputs/>
         </v-card>
 
-        <v-btn flat color="#d50000" @click="e1 = 1">Voltar</v-btn>
+        <v-btn color="#FF5722" :style="styleButton" @click="e1 = 1">Voltar</v-btn>
 
         <v-btn color="#03A9F4" :style="styleButton" @click="e1 = 3">
           <slot name="btn-content-step-2" />
@@ -44,9 +44,12 @@
 
       <v-stepper-content step="3">
         <v-card class="mb-5" color="blue" height="420px">
+          <VuetifyCards/>
         </v-card>
 
-        <ButtonVuetifyWarning @click="e1 = 1">VOLTAR</ButtonVuetifyWarning>
+        <v-btn color="#FF5722" :style="styleButton" @click="e1 = 2">
+          Voltar
+        </v-btn>
         <ButtonVuetifySuccess >CONCLUIR</ButtonVuetifySuccess>
       </v-stepper-content>
     </v-stepper-items>
@@ -65,6 +68,7 @@ import ButtonVuetifyPrimary from '../Buttons/vuetifyButtonPrimary'
 import ButtonStoneSuccess from '../Buttons/stoneButtonSuccess'
 import ButtonStoneWarning from '../Buttons/stoneButtonWarning'
 import ButtonStonePrimary from '../Buttons/stoneButtonPrimary'
+import VuetifyCards from '../Cards/vuetifyCards'
 
 import VuetifyComboBox from '../../elements/comboBox/vuetifyComboBox'
 import VuetifySelectionControls from '../../elements/selectionControls/vuetifySelectionControls'
@@ -80,6 +84,7 @@ export default {
     ButtonStoneWarning,
     ButtonStonePrimary,
     VuetifyFormInputs,
+    VuetifyCards,
     VuetifyComboBox,
     VuetifySelectionControls
   },

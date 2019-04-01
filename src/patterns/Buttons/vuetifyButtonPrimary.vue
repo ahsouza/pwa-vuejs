@@ -1,5 +1,5 @@
 
-<template>
+<template class="pa-2">
   <v-btn :style="btnVuetify" round color="#03A9F4">
     <slot></slot>
   </v-btn>

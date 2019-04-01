@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid px-0>
+  <v-container fluid class="pa-2">
     <v-checkbox color="green" v-model="checkbox" :label="`Checkbox 1: ${checkbox.toString()}`">
     </v-checkbox>
 

@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-layout wrap>
+    <v-layout wrap class="pa-2">
       <v-flex xs12>
         <v-combobox v-model="select" :items="items" chips label="Tecnologias utilizadas"></v-combobox>
       </v-flex>
