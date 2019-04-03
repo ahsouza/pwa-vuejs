@@ -21,7 +21,7 @@
     <v-stepper-items>
       <v-stepper-content step="1">
         <v-card class="mb-5" height="420px">
-          <VuetifyComboBox />
+          <VuetifyComboBox label="Qual tipo de projeto você precisa?"/>
           <VuetifySelectionControls />
         </v-card>
 

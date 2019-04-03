@@ -2,11 +2,23 @@
   <v-layout spacing-playground class="pa-2">
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
+        <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="4.75"></v-img>
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
-            <div> {{ card_text }} </div>
+            <h3 class="headline mb-0"><slot name="card-title" /></h3>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
+            <div><slot name="content-card"/>dadadadadaddadad</div>
           </div>
         </v-card-title>
 

@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-layout wrap class="pa-2">
       <v-flex xs12>
-        <v-combobox v-model="select" :items="items" chips label="Tecnologias utilizadas"></v-combobox>
+        <v-combobox v-model="select" :items="items" chips :label="label"></v-combobox>
       </v-flex>
 
     </v-layout>
@@ -18,19 +18,17 @@
 
 <script>
   export default {
+    props: ['label'],
     name: 'combo-box-vuetify',
     data () {
       return {
-        select: 'Angular.js',
+        select: 'Custom interface and layout',
         items: [
-          'Vue.js',
-          'React.js',
-          'Node.js',
-          'Laravel PHP',
-          'Spring JAVA',
-          'Django Python',
-          'Flask Python',
-          'Cake PHP',
+          'Web site design',
+          'Seo optimization',
+          'CMS integrations (Wordpress)',
+          'Newsletter Campaign',
+          'Logo Design',
         ]
       }
     }
