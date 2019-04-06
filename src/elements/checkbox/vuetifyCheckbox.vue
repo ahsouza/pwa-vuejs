@@ -14,6 +14,12 @@ export default {
  name: 'VuetifyCheckbox',
  data() {
   return {
+    fields: [{
+      title: 'Checkbox Vuetify',
+      type: 'checkbox',
+      validations: {required: false},
+      properties: {description: "Element checkbox with vuetify"}
+    }],
     checkbox: true,
     radioGroup: 1,
     switch1: true

@@ -2,12 +2,15 @@ import { configure } from '@storybook/vue'
 import stonesTheme from './stonesTheme'
 import {setConsoleOptions} from '@storybook/addon-console'
 import '../src/assets/css/style.css'
+import colors from 'vuetify/es5/util/colors'
 import Vue from 'vue'
 import 'vuetify/dist/vuetify.min.css'
 import Vuetify from 'vuetify'
 import MaterialIcons from 'material-design-icons-iconfont'
-import colors from 'vuetify/es5/util/colors'
-Vue.use(MaterialIcons)
+import SocialSharing from 'vue-social-sharing'
+
+
+Vue.use(MaterialIcons, SocialSharing)
 Vue.use(Vuetify, {
   theme: {
     primary: colors.indigo.base,

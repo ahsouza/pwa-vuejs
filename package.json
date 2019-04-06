@@ -27,6 +27,7 @@
     "vue": "^2.6.8",
     "vue-design-system": "git+https://github.com/viljamis/vue-design-system",
     "vue-router": "^3.0.2",
+    "vue-social-sharing": "^2.4.2",
     "vuelidate": "^0.7.4",
     "vuetify": "^1.5.5"
   },

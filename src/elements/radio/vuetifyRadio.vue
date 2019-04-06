@@ -15,6 +15,12 @@ export default {
  name: 'VuetifyRadio',
  data() {
   return {
+    fields: [{
+      title: 'Radio Vuetify',
+      type: 'radio',
+      validations: {required: false},
+      properties: {description: "Element comboBox with vuetify"}
+    }],
     checkbox: true,
     radioGroup: 1,
     switch1: true

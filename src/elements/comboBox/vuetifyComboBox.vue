@@ -22,6 +22,12 @@
     name: 'combo-box-vuetify',
     data () {
       return {
+        fields: [{
+          title: 'ComboBox Vuetify',
+          type: 'comboBox',
+          validations: {required: false},
+          properties: {description: "Element comboBox with vuetify"}
+        }],
         select: 'Custom interface and layout',
         items: [
           'Web site design',
