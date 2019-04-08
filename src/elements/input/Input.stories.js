@@ -6,6 +6,7 @@ import {withKnobs, text, boolean} from '@storybook/addon-knobs'
 import VuetifyInputEmail from './vuetifyInputEmail'
 import VuetifyInputShortText from './vuetifyInputShortText'
 import VuetifyInputLongText from './vuetifyInputLongText'
+import VuetifyInputDate from './vuetifyInputDate'
 
 storiesOf('Inputs', module)
   .addDecorator(withKnobs)
@@ -20,4 +21,8 @@ storiesOf('Inputs', module)
   .add('input-long-text-vuetify', () => ({
     components: {VuetifyInputLongText},
     template: '<VuetifyInputLongText/>'
+  }))
+  .add('input-date-vuetify', () => ({
+    components: {VuetifyInputDate},
+    template: '<VuetifyInputDate/>'
   }))
