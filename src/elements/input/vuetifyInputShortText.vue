@@ -1,21 +1,19 @@
 <template>
-<v-flex xs12 md4>
-     <v-text-field
-       v-model="model"
-       :counter="max"
-       :rules="rules"
-       label="Short Text"
-     ></v-text-field>
- </v-flex>
+  <v-flex xs12 md4>
+    <v-text-field v-model="model"
+      :counter="max"
+      :rules="rules"
+      label="Short Text"
+    ></v-text-field>
+  </v-flex>
 </template>
+
 <script>
   export default {
-    name: 'VuetifyInputShortText',
+    name:'VuetifyInputShortText',
     data: () => ({
-      allowSpaces: false,
-      match: 'Foobar',
       max: 0,
-      model: 'Digite alguma coisa'
+      model: 'Digite aqui seu texto'
     }),
 
     computed: {
@@ -48,25 +46,13 @@
 
         return {
           fields: [{
-            title: 'Input Date Pickers Vuetify',
-            type: 'date',
+            title: 'Input Email Vuetify',
+            type: 'short_text',
             validations: {required: false},
-            properties: {description: "Element input date pickers vuetify"}
+            properties: {description: "Element input short text with vuetify"}
           }],
           rules
         }
-      }
-    },
-
-    watch: {
-      match: 'validateField',
-      max: 'validateField',
-      model: 'validateField'
-    },
-
-    methods: {
-      validateField () {
-        this.$refs.form.validate()
       }
     }
   }

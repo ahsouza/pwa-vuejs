@@ -7,6 +7,7 @@ import VuetifyInputEmail from './vuetifyInputEmail'
 import VuetifyInputShortText from './vuetifyInputShortText'
 import VuetifyInputLongText from './vuetifyInputLongText'
 import VuetifyInputDate from './vuetifyInputDate'
+import VuetifyInputPictureChoice from './vuetifyInputPictureChoice'
 
 storiesOf('Inputs', module)
   .addDecorator(withKnobs)
@@ -25,4 +26,8 @@ storiesOf('Inputs', module)
   .add('input-date-vuetify', () => ({
     components: {VuetifyInputDate},
     template: '<VuetifyInputDate/>'
+  }))
+  .add('input-picture-choice-vuetify', () => ({
+    components: {VuetifyInputPictureChoice},
+    template: '<VuetifyInputPictureChoice/>'
   }))
