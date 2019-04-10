@@ -46,7 +46,15 @@
           rules.push(rule)
         }
 
-        return rules
+        return {
+          fields: [{
+            title: 'Input Date Pickers Vuetify',
+            type: 'date',
+            validations: {required: false},
+            properties: {description: "Element input date pickers vuetify"}
+          }],
+          rules
+        }
       }
     },
 
