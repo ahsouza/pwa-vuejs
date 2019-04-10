@@ -1,29 +1,65 @@
 <template>
-  <v-form>
-    <v-container>
-      <v-layout row wrap>
-        <v-flex xs12 sm6>
-          <v-text-field v-model="title" :rules="[rules.required, rules.counter]" label="Seu título aqui" counter maxlength="28">
-          </v-text-field>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </v-form>
+<v-flex xs12 md4>
+     <v-text-field
+       v-model="model"
+       :counter="max"
+       :rules="rules"
+       label="Short Text"
+     ></v-text-field>
+ </v-flex>
 </template>
 <script>
-export default {
-   data () {
-     return {
-       fields: [{
-         title: 'Input short text',
-         type: 'short_text',
-         properties: {description: "Element input text with vuetify"}
-       }],
-       rules: {
-         required: value => !!value || 'Campo obrigatório!',
-         counter: value => value.length <= 28 || 'Max 28 carácteres'
-       }
-     }
+  export default {
+    name: 'VuetifyInputShortText',
+    data: () => ({
+      allowSpaces: false,
+      match: 'Foobar',
+      max: 0,
+      model: 'Digite alguma coisa'
+    }),
+
+    computed: {
+      rules () {
+        const rules = []
+
+        if (this.max) {
+          const rule =
+            v => (v || '').length <= this.max ||
+              `A maximum of ${this.max} characters is allowed`
+
+          rules.push(rule)
+        }
+
+        if (!this.allowSpaces) {
+          const rule =
+            v => (v || '').indexOf(' ') < 0 ||
+              'No spaces are allowed'
+
+          rules.push(rule)
+        }
+
+        if (this.match) {
+          const rule =
+            v => (!!v && v) === this.match ||
+              'Values do not match'
+
+          rules.push(rule)
+        }
+
+        return rules
+      }
+    },
+
+    watch: {
+      match: 'validateField',
+      max: 'validateField',
+      model: 'validateField'
+    },
+
+    methods: {
+      validateField () {
+        this.$refs.form.validate()
+      }
+    }
   }
-}
 </script>
