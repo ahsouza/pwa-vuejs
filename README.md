@@ -3,8 +3,8 @@
 ### Example of ***PWA*** with `vuetify` CSS Framework for better design, vue design system, storybook with docker
 
 
-![alt text](https://github.com/ahsouza/pwa-vuejs/tree/master/static/img/storybook-01.png)
-![alt text](https://github.com/ahsouza/pwa-vuejs/tree/master/static/img/storybook-02.png)
+![alt text](https://raw.githubusercontent.com/ahsouza/pwa-vuejs/master/static/img/storybook-01.png)
+![alt text](https://raw.githubusercontent.com/ahsouza/pwa-vuejs/master/static/img/storybook-02.png)
 
 ### Using with Docker
 
