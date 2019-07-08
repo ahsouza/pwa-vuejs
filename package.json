@@ -1,7 +1,7 @@
 {
   "name": "pwa-vue",
   "version": "1.0.0",
-  "author": "@ahsouza <annibalhsouza@gmail.com>",
+  "author": "@ahsouza Aníbal Henrique <annibalhsouza@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --progress",
@@ -22,6 +22,7 @@
     "@vue/cli-service-global": "^3.5.1",
     "axios": "^0.18.0",
     "babel-preset-vue": "^2.0.2",
+    "end-of-stream": "^1.4.1",
     "material-design-icons-iconfont": "^4.0.5",
     "storybook-addon-styled-component-theme": "^1.1.1",
     "vue": "^2.6.8",
