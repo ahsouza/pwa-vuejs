@@ -20,7 +20,7 @@
     "@storybook/vue": "^5.0.1",
     "@vue/babel-preset-app": "^3.5.1",
     "@vue/cli-service-global": "^3.5.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-preset-vue": "^2.0.2",
     "end-of-stream": "^1.4.1",
     "material-design-icons-iconfont": "^4.0.5",
